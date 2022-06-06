@@ -1,15 +1,9 @@
 
 # ESAME FINALE UFS04 - Algoritmi di Machine Learning
 
-Il seguente report è stato redatto in quanto è stata richiesto lo sviluppo di un sito di e-commerce con l’implementazione di algoritmi di machine learning, 
-la richiesta fa fronte all’esame finale del modulo UFS04 - Algoritmi di Machine Learning svolto presso l’ITS Angelo Rizzoli. 
-Viste le nozioni apprese durante lo svolgimento del corso abbiamo imparato come si sviluppano, funzionano e implementano gli algoritmi che fanno utilizzo 
-delle tecniche di Machine Learning per effettuare previsioni sui dati. Il Report e il programma sono stati svolti in gruppo, dove ogni partecipante ha contribuito 
-allo svolgimento della prova d’esame. Il gruppo è attualmente composto da Edoardo Andrea Giacomin, Samuele Parma, Stefano Perdicchia, Marco Tosi e Alessandro Benzi. 
-Abbiamo deciso di dare a questo report una struttura suddivisa in sei parti, inizialmente abbiamo l’introduzione al lavoro svolto e la relativa consegna, 
-successivamente seguirà una spiegazione del lavoro svolto, così da poter capire al meglio il funzionamento del programma, andando avanti avremo una spiegazione con immagini, di come funziona il programma che è stato sviluppato, quindi mediante la sua interfaccia, il meccanismo di registrazione e di login, 
-i database che sono stati utilizzati e come funziona l’algoritmo di machine learning sviluppato. Successivamente andremo ad analizzare i risultati che abbiamo 
-ottenuto con relative immagini di output e infine una breve conclusione al lavoro svolto con i nostri commenti personali. In fondo al report saranno presenti i link utili e quelli utilizzati per poter sviluppare al meglio il programma finale, con il relativo link a GitHub nel quale è presente il codice in formato completo.
+Il seguente report è stato redatto in modo da illustrare il codice per lo sviluppo di un sito di e-commerce e giustificare le scelte fatto rispetto l’implementazione di algoritmi di machine learning. L'intero progetto è il risultato di un lavoro svolto con il fine di completare la parte pratica dell'esame finale del modulo UFS04 - Algoritmi di Machine Learning, svolto presso l’ITS Angelo Rizzoli.
+
+Questo lavoro è la dimostrazione delle competenze acquisite negli ultimi mesi di corso: nello specifico abbiamo appreso tecniche e metodi di implementazione di algoritmi di Machine Learning per effettuare previsioni sui dati. Il Report e il programma sono stati svolti in gruppo, il quale è composto da: Edoardo Andrea Giacomin, Samuele Parma, Stefano Perdicchia, Marco Tosi ed Alessandro Benzi. Il report si costituisce di una struttura suddivisa in cinque parti, le quali seguono questo ordine: Introduzione al lavoro svolto e relativa consegna, spiegazione del lavoro svolto per capire al meglio il funzionamento del programma, spiegazione con immagini di come funziona il programma che è stato sviluppato (quindi mediante la sua interfaccia, il meccanismo di registrazione e di login, i database che sono stati utilizzati, come funziona l’algoritmo di machine learning sviluppato e l'analisi dei risultati che abbiamo ottenuto con relative immagini di output), ed infine una breve conclusione sul lavoro svolto con i nostri commenti personali. In fondo al report saranno anche presenti i link utili e quelli utilizzati per poter sviluppare al meglio il programma finale, con il relativo link a GitHub nel quale è presente il codice in formato completo.
 
 INDICE
 
