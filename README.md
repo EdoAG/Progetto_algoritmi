@@ -56,6 +56,8 @@ Quindi in breve quello che fa il nostro algoritmo è quello di analizzare il dat
 
 # ANALISI DEI RISULTATI
 
+Il programma suggerisce con successo film con caratteristiche simili, infatti dato un titolo restituisce film titoli della stessa serie o dello stesso genere. Nel nostro caso abbiamo anche considerato il regista ed il cast ma volendo possiamo solo basarci sul genere o dare più peso alle parole chiave che meglio descrivono il film. Il programma funziona solo con titoli già presenti nel dataset ma una futura implementazione potrebbe essere di chiedere all’utente le caratteristiche del film cercato e trovare quali film sono più vicini ai gusti dell’utente.
+
 # CONCLUSIONI
 
 Possiamo notare come il programma funzioni tramite l'algoritmo che abbiamo scelto, la nostra interfaccia grafica inoltre ci permette di caricare noi stessi i film online, in maniera tale da poter averne sempre di nuovi e di ingrandire il nostro dataset.
