@@ -50,3 +50,7 @@ Infine attraverso la funzione **get_reccomendation** l'utente da in input il tit
 # 2. Interfaccia
 
 # MACHINE LEARNING
+
+KNN con k = 10 
+calcola la distanza tra il film richiesto e i film del dataset, in output invia i dati più vicini a quelli richiesti!
+(i primi 11) infatti il k è 10 
