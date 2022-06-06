@@ -43,3 +43,4 @@ Il nostro progetto è strutturato in due parti, la prima parte integra un progra
 Questa sezione sarà divisa in due parti, la prima parte andrà a spiegare come abbiamo lavorato il linguaggio python, mentre la seconda riguarderà l'interfaccia presente nel localhost.
 # 1. Python
 # 2. Interfaccia
+.
