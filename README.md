@@ -36,11 +36,11 @@ Successivamente abbiamo invece deciso di sviluppare un prototipo di sito che pos
 si vanno a selezionare come “preferiti”. Questo tipo di programma utilizza un algoritmo di KNN che permette di calcolare la distanza tra punti, verrà comunque 
 spiegato maggiormente nel capitolo dedicato. 
 
-# LAVORO SVOLTO
+# **LAVORO SVOLTO**
 Il nostro progetto è strutturato in due parti, la prima parte integra un programma scritto in linguaggio Python e l'algoritmo di machine learning, la seconda parte integra un'interfaccia grafica attraverso un codice in HTML e css, e la libreria Flask di Python.
 Questa sezione sarà divisa in due parti, la prima parte andrà a spiegare come abbiamo lavorato il linguaggio python, mentre la seconda riguarderà l'interfaccia presente nel localhost.
 # 1. Python
 Inizialmente abbiamo trovato online tre dataset per far fronte alla richiesta dell'esame, erano tre dataset separati tra di loro:  “movies_metadata.csv”, ”credits” e ”keyword”, abbiamo iniziato lavorando sull'unione dei dati, e la creazione di un unico dataset su cui poi lavorare. Abbiamo dunque sistemato gli indici, verificato l'integrità del file ed eliminato le righe non idonee, per esempio le vecchie righe 19730,29503,35587, che sono state eliminate in quante erano delle copie di altre righe. Fatto questi passaggi abbiamo ultimato i preparativi e quindi creato un dataset unico con tutti i dati che ci servivano per proseguire all'esame.
-Successivamente abbiamo utilizato in Python la funzione **ast(Abstract Syntax Tree)literal_eval**
+Successivamente abbiamo importato in Python la libreria **ast(Abstract Syntax Tree)** per utilizzare la funzione **literal_eval** all'interno di un ciclo for
 # 2. Interfaccia
 .
