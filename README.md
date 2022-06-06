@@ -58,7 +58,9 @@ Quindi in breve quello che fa il nostro algoritmo è quello di analizzare il dat
 
 # CONCLUSIONI
 
-Il programma è funzionante e suggerisce film della stessa serie o con genere simile.
+Possiamo notare come il programma funzioni tramite l'algoritmo che abbiamo scelto, la nostra interfaccia grafica inoltre ci permette di caricare noi stessi i film online, in maniera tale da poter averne sempre di nuovi e di ingrandire il nostro dataset.
+Siamo soddisfatti dei risultati che abbiamo ottenuto, visto che nel tempo che abbiamo avuto a disposizione siamo riusciti a sviluppare un programma funzionante e abbastanza ottimizzato, anche se siamo incorsi in diversi errori e problemi nella nostra fase di svolgimento. Nel complesso dunque il programma che abbiamo sviluppato si può adoperare proprio come lo avevamo ideato quindi ci possiamo ritenere soddisfatti.
+
 # LINK UTILI
 1. https://flask.palletsprojects.com/en/2.1.x/
 2. https://www.datacamp.com/tutorial/recommender-systems-python
