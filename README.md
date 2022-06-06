@@ -3,7 +3,15 @@
 
 Il seguente report è stato redatto in modo da illustrare il codice per lo sviluppo di un sito di e-commerce e giustificare le scelte fatto rispetto l’implementazione di algoritmi di machine learning. L'intero progetto è il risultato di un lavoro svolto con il fine di completare la parte pratica dell'esame finale del modulo UFS04 - Algoritmi di Machine Learning, svolto presso l’ITS Angelo Rizzoli.
 
-Questo lavoro è la dimostrazione delle competenze acquisite negli ultimi mesi di corso: nello specifico abbiamo appreso tecniche e metodi di implementazione di algoritmi di Machine Learning per effettuare previsioni sui dati. Il Report e il programma sono stati svolti in gruppo, il quale è composto da: Edoardo Andrea Giacomin, Samuele Parma, Stefano Perdicchia, Marco Tosi ed Alessandro Benzi. Il report si costituisce di una struttura suddivisa in cinque parti, le quali seguono questo ordine: Introduzione al lavoro svolto e relativa consegna, spiegazione del lavoro svolto per capire al meglio il funzionamento del programma, spiegazione con immagini di come funziona il programma che è stato sviluppato (quindi mediante la sua interfaccia, il meccanismo di registrazione e di login, i database che sono stati utilizzati, come funziona l’algoritmo di machine learning sviluppato e l'analisi dei risultati che abbiamo ottenuto con relative immagini di output), ed infine una breve conclusione sul lavoro svolto con i nostri commenti personali. In fondo al report saranno anche presenti i link utili e quelli utilizzati per poter sviluppare al meglio il programma finale, con il relativo link a GitHub nel quale è presente il codice in formato completo.
+Questo lavoro è la dimostrazione delle competenze acquisite negli ultimi mesi di corso: nello specifico abbiamo appreso tecniche e metodi di implementazione di algoritmi di Machine Learning per effettuare previsioni sui dati.
+Il Report e il programma sono stati svolti in gruppo, il quale è composto da: Edoardo Andrea Giacomin, Samuele Parma, Stefano Perdicchia, Marco Tosi ed Alessandro Benzi.
+
+Il report si costituisce di cinque parti, le quali seguono questo ordine: 
+Introduzione al lavoro svolto e relativa consegna, 
+spiegazione del lavoro svolto per capire al meglio il funzionamento del programma, 
+spiegazione con immagini di come funziona il programma che è stato sviluppato (quindi mediante la sua interfaccia, il meccanismo di registrazione e di login, i database che sono stati utilizzati, come funziona l’algoritmo di machine learning sviluppato e l'analisi dei risultati che abbiamo ottenuto con relative immagini di output)
+ed infine una breve conclusione sul lavoro svolto con i nostri commenti personali.
+In fondo al report saranno anche presenti i link utili e quelli utilizzati per poter sviluppare al meglio il programma finale, con il relativo link a GitHub nel quale è presente il codice in formato completo.
 
 INDICE
 
