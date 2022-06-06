@@ -39,6 +39,5 @@ si vanno a selezionare come “preferiti”. Questo tipo di programma utilizza u
 spiegato maggiormente nel capitolo dedicato. 
 
 # LAVORO SVOLTO
+Il nostro progetto è strutturato in due parti, la prima parte integra un programma scritto in linguaggio Python e l'algoritmo di machine learning, la seconda parte integra un'interfaccia grafica attraverso un codice in HTML e css, e la libreria Flask di Python.
 
-Il nostro progetto è stato diviso in due parti, la prima parte integra l'html con un sistema login e registrazione con i dati salvati su un dtabase sqllite, questo serve per registrazione... 
-La seconda parte è un programma in codice python che 
