@@ -5,13 +5,11 @@ Il seguente report è stato redatto in quanto è stata richiesto lo sviluppo di 
 la richiesta fa fronte all’esame finale del modulo UFS04 - Algoritmi di Machine Learning svolto presso l’ITS Angelo Rizzoli. 
 Viste le nozioni apprese durante lo svolgimento del corso abbiamo imparato come si sviluppano, funzionano e implementano gli algoritmi che fanno utilizzo 
 delle tecniche di Machine Learning per effettuare previsioni sui dati. Il Report e il programma sono stati svolti in gruppo, dove ogni partecipante ha contribuito 
-allo svolgimento della prova d’esame. Il gruppo è attualmente composto da Edoardo Andrea Giacomin, Samuele Parma, Stefano Perdicchia e Marco Tosi. 
-Abbiamo deciso di dare a questo report una struttura suddivisa in sei parti, inizialmente potremo trovare l’introduzione al lavoro svolto e la relativa consegna, 
-successivamente seguirà una spiegazione del lavoro svolto così da poter capire al meglio il funzionamento del programma, andando avanti avremo una spiegazione, 
-con immagini, di come funziona il programma che è stato sviluppato, quindi mediante la sua interfaccia, il meccanismo di registrazione e di login, 
+allo svolgimento della prova d’esame. Il gruppo è attualmente composto da Edoardo Andrea Giacomin, Samuele Parma, Stefano Perdicchia, Marco Tosi e Alessandro Benzi. 
+Abbiamo deciso di dare a questo report una struttura suddivisa in sei parti, inizialmente abbiamo l’introduzione al lavoro svolto e la relativa consegna, 
+successivamente seguirà una spiegazione del lavoro svolto, così da poter capire al meglio il funzionamento del programma, andando avanti avremo una spiegazione con immagini, di come funziona il programma che è stato sviluppato, quindi mediante la sua interfaccia, il meccanismo di registrazione e di login, 
 i database che sono stati utilizzati e come funziona l’algoritmo di machine learning sviluppato. Successivamente andremo ad analizzare i risultati che abbiamo 
-ottenuto con relative immagini di output e infine una breve conclusione al lavoro svolto con i nostri commenti personali. In fondo al report saranno presente i link utili
-e quelli utilizzati per poter sviluppare al meglio il programma finale, e il relativo link a GitHub nel quale è presente il codice in formato completo.
+ottenuto con relative immagini di output e infine una breve conclusione al lavoro svolto con i nostri commenti personali. In fondo al report saranno presenti i link utili e quelli utilizzati per poter sviluppare al meglio il programma finale, con il relativo link a GitHub nel quale è presente il codice in formato completo.
 
 INDICE
 
