@@ -49,4 +49,4 @@ Infine attraverso la funzione **get_reccomendation** l'utente da in input il tit
 
 # 2. Interfaccia
 
-# Algoritmo di Machine Learning
+# MACHINE LEARNING
