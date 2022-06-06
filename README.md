@@ -6,7 +6,7 @@ Il seguente report è stato redatto in modo da illustrare il codice per lo svilu
 Questo lavoro è la dimostrazione delle competenze acquisite negli ultimi mesi di corso: nello specifico abbiamo appreso tecniche e metodi di implementazione di algoritmi di Machine Learning per effettuare previsioni sui dati.
 Il Report e il programma sono stati svolti in gruppo, il quale è composto da: Edoardo Andrea Giacomin, Samuele Parma, Stefano Perdicchia, Marco Tosi ed Alessandro Benzi.
 
-Il report si costituisce di cinque parti, le quali seguono questo ordine: 
+Il report si costituisce di cinque parti, le quali seguono il seguente ordine: 
 Introduzione al lavoro svolto e relativa consegna, 
 spiegazione del lavoro svolto per capire al meglio il funzionamento del programma, 
 spiegazione con immagini di come funziona il programma che è stato sviluppato (quindi mediante la sua interfaccia, il meccanismo di registrazione e di login, i database che sono stati utilizzati, come funziona l’algoritmo di machine learning sviluppato e l'analisi dei risultati che abbiamo ottenuto con relative immagini di output)
@@ -26,47 +26,52 @@ INDICE
 6.	Link utili
 
 # INTRODUZIONE
-Il lavoro che è stato affidato alla classe del Machine Learning al primo anno del 2021/2022 come esame finale del modulo di Algoritmi è quello di sviluppare 
-mediante le nozioni apprese all’interno del corso un sito che funga da e-commerce, così da poter successivamente implementare quelli che sono gli algoritmi 
-di Machine Learning per poter andare a prevedere i dati. Durante il corso abbiamo avuto la possibilità di poter svolgere questo lavoro in gruppi, 
-così abbiamo deciso di dividere i diversi compiti all’interno del gruppo che abbiamo formato per rendere più efficiente il tempo investito nello sviluppo del 
-programma. Inizialmente abbiamo scelto che tipo di lavoro svolgere, visto che la consegna era molto ampia, e potevamo sviluppare dunque questo progetto come più 
-ci aggradava, il nostro approccio è stato quello di creare in maniera semplice un interfaccia grafica che si possa aprire sul proprio localhost del computer 
-così da poter gestire meglio i diversi dati. Inizialmente la nostra idea era quella di sviluppare un sito simil-Amazon nel quale poter inserire i prodotti di nostro 
-interesse all’interno di un carrello, cosi da poterli acquistare e tramite un algoritmo di machine learning poter ricevere in output i diversi prodotti correlati. 
-Successivamente abbiamo invece deciso di sviluppare un prototipo di sito che possa consigliare all’utente che si registra dei film, in base ai titoli dei film che 
-si vanno a selezionare come “preferiti”. Questo tipo di programma utilizza un algoritmo di KNN che permette di calcolare la distanza tra punti, verrà comunque 
-spiegato maggiormente nel capitolo dedicato. 
+Come esame finale del modulo di Algoritmi ci è stato richiesto lo sviluppo di un sito e-commerce, per poi implementarvi successivamente algoritmi di Machine Learning.
+Lavorando in gruppo, abbiamo stabilito che considerata la libertà progettuale data nella consegna, avremmo sviluppato il progetto con un approccio 'semplice e lineare', e abbiamo quindi sviluppato un'interfaccia grafica con la quale sia possibile interagire dal proprio localhost. 
+L'idea originale prevedeva lo sviluppo di un sito simile ad Amazon nel quale poter inserire i prodotti da acquistare all’interno di un carrello e quindi ordinarli (l'algoritmo di machine learning avrebbe poi suggerito i prodotti correlati agli acquisti). 
+Nel progetto finale abbiamo invece deciso di sviluppare un prototipo di sito che possa consigliare all’utente che si registra dei film, in base ai titoli di film che l'utente indica inizialmente come “preferiti” (in modo quindi da individuare film simili a quelli che piacciono). 
+Il programma sviluppato utilizza nello specifico un algoritmo di KNN (verrà poi spiegato più avanti). 
 
 # **LAVORO SVOLTO**
-Il nostro progetto è strutturato in due parti, la prima parte integra un programma scritto in linguaggio Python e l'algoritmo di machine learning, la seconda parte integra un'interfaccia grafica attraverso un codice in HTML e css, e la libreria Flask di Python.
-Questa sezione sarà divisa in due parti, la prima parte andrà a spiegare come abbiamo lavorato il linguaggio python, mentre la seconda riguarderà l'interfaccia presente nel localhost.
+Il progetto si avvale di linguaggio Python soprattutto per l'algoritmo di machine learning mentre per l'interfaccia grafica abbiamo fatto uso di codice in HTML, CSS, e della libreria Flask di Python.
+Ora andremo a spiegare come abbiamo lavorato python;
+
 # 1. Python
-Inizialmente abbiamo trovato online tre dataset per far fronte alla richiesta dell'esame, erano tre dataset separati tra di loro:  “movies_metadata.csv”, ”credits” e ”keyword”, abbiamo iniziato lavorando sull'unione dei dati, e la creazione di un unico dataset su cui poi lavorare. Abbiamo dunque sistemato gli indici, verificato l'integrità del file ed eliminato le righe non idonee, per esempio le vecchie righe 19730,29503,35587, che sono state eliminate in quante erano delle copie di altre righe. Fatto questi passaggi abbiamo ultimato i preparativi e quindi creato un dataset unico con tutti i dati che ci servivano per proseguire all'esame.
-Successivamente abbiamo importato in Python la libreria **ast(Abstract Syntax Tree)** per utilizzare la funzione **literal_eval** all'interno di un ciclo for per convertire i valori di features (cast, crew, keywords e genres) da delle stringhe a delle liste di dizionari. A questo punto da crew abbiamo estratto il direttore, mentre se era assente gli abbiamo attribuito un valore di ritorno Nan. Successivamente abbiamo estratto da cast, crew e genres i valori dai dizionari e abbiamo salvato i primi tre, visto che questo valore va ad influenzare la precisione del nostro modello che andremo ad applicare.
-Quindi abbiamo pulito il dataset, ossia i valori che risultavano vuoti e abbiamo impostato tutto in minuscolo, per non incorrere in successivi errori. Successivamnte abbiamo creato e aggiunto al dataset una colonna "soup" per concatenare tutto in una colonna che potesse contenere una stringa di valori estratti in precedenza dalle altre colonne (direttore, cast, keyword e genres). Abbiamo utilizzato il metodo **sklearn.feature_extraction.text.CountVectorize** per andare a convertire la colonna soup da una stringa in una matrice sparsa. IN sostanza va a creare una matrice che ha indici la diverse parole presenti nella colonna e nelle righe è presente quante volte la parola compare. Andando poi a utilizzare il metodo **sklearn.metrics.pairwise.cosine_similarity** per calcolare quanto simili sono i film rispeto alla matrice che è stata creata precedentemente, quindi **cosine_similarity** va a rappresentare tutti i film sullo stesso piano cartesiano in base alla matrice e va a calcolare la distranza tra i film, minore è la distanza maggiore è la similarità.
-Infine attraverso la funzione **get_reccomendation** l'utente da in input il titolo di un film, che attraverso la matrice di similarità va a trovare l'indice rispetto al dato del titolo (nel nostro caso i titoli uguali/simili), va a trovare la distanza tra il film dato in input e tutti gli altri presenti al'interno del dataset utilizzato, vengono ordinati e va a restituire in output i primi 11 titoli correlati (il primo è il nome di se stesso) andando a riassociare l'indice al titolo e vengono stampati in output.
+Per sviluppare il lavoro ci siamo avvalsi di tre dataset trovati online:  “movies_metadata.csv”, ”credits” e ”keyword”.
+Ci siamo quindi occupati di unire i dataset, così da avere un unico dataset su cui poi lavorare.
+Successivamente abbiamo sistemato gli indici e verificato l'integrità del file ed eliminato le righe non idonee (per esempio le vecchie righe 19730,29503,35587, che sono state eliminate in quante erano delle copie di altre righe). 
+Abbiamo poi importato in Python la libreria **ast(Abstract Syntax Tree)** per utilizzare la funzione **literal_eval** all'interno di un ciclo f'or' per convertire i valori di features (cast, crew, keywords e genres) da delle stringhe a delle liste di dizionari. 
+A questo punto da 'crew' abbiamo estratto il direttore, mentre se era assente gli abbiamo attribuito un valore di ritorno Nan. Dopodichè abbiamo estratto da 'cast', 'crew' e 'genres' i valori dai dizionari e abbiamo salvato i primi tre, visto che questo valore va ad influenzare la precisione del nostro modello che andremo ad applicare.
+Una volta fatto ciò abbiamo pulito il dataset, e abbiamo impostato tutto lo scritto in formato minuscolo, per non incorrere in successivi errori.
+Abbiamo poi creato e aggiunto al dataset una colonna "soup" per concatenare tutto in una colonna che potesse contenere una stringa di valori estratti in precedenza dalle altre colonne (direttore, cast, keyword e genres).
+Abbiamo utilizzato il metodo **sklearn.feature_extraction.text.CountVectorize** per andare a convertire la colonna soup da una stringa in una matrice di token (in sostanza va a creare una matrice che ha come indici la diverse parole presenti nella colonna mentre nelle righe è presente quante volte la parola compare).
+Andando poi a utilizzare il metodo **sklearn.metrics.pairwise.cosine_similarity** per calcolare quanto simili sono i film rispetto alla matrice che è stata creata precedentemente, mentre **cosine_similarity** va a rappresentare tutti i film sullo stesso piano cartesiano in base alla matrice e va a calcolare la distranza tra i film (minore è la distanza maggiore è la similarità).
+Infine attraverso la funzione **get_reccomendation** l'utente da in input il titolo di un film, che attraverso la matrice di similarità va a trovare l'indice rispetto al dato del titolo (nel nostro caso i titoli uguali/simili), va a trovare la distanza tra il film dato in input e tutti gli altri presenti al'interno del dataset utilizzato, vengono quindi ordinati e poi restituiti in output i primi 11 titoli correlati (il primo è il nome di se stesso) .
 
 # 2. Interfaccia
  
-Lo sviluppo dell'interfaccia grafica è stato maggiormente ostico, visto che il collegamento che dovevamo fare con il dataset importato e il nostro codice python non è stato ottimale. Per riassumere il lavoro che abbiamo svolto, possiamo dire che abbiamo iniziato attraverso la liberia Flask di python che ci ha permesso di andare a creare nel nostro localhost una breve interfaccia di login e registrazione, che permette in locale di memorizzare username e password (ovviamente nascosta), in un piccolo database SQLlite che inserisce e salva i dati di registrazione per fare il login.
+Lo sviluppo dell'interfaccia grafica è stato più complicato soprattutto per il collegamento che dovevamo fare con il dataset importato e il codice python.
+Per riassumere il lavoro che abbiamo svolto, possiamo dire che abbiamo iniziato attraverso la liberia Flask di python che ci ha permesso di andare a creare nel nostro localhost una breve interfaccia di login e registrazione, che permette in locale di memorizzare username e password (ovviamente nascosta), in un piccolo database SQLlite che inserisce e salva i dati di registrazione per fare il login.
 Attraverso la nostra interfaccia possiamo dunque registrare un nuovo utente, attraverso username e una pasword, che verranno successivamente richiesti per fare il login al nostro local-site. 
-Questo attraverso il run di flask dal cmd, cosi da poter avviare in locale il nostro sito. 
-Possiamo dunque dalla nostra interfaccia andare a cercare un film, cosi da poter leggere la descrizione, e i film correlati, che possono uscire attraverso il linguaggio python e che utilizza un algoritmo id amchine learnging (nel codice python possiamo farlo con tutti i film possibili, visto la grande quantità di dati presenti all'interno del dataset.), mentre all'interno dell'interfaccia possiamo solamente salvare un file txt preso in locale con un film (è stata la nostra grande pecca ad adesso). Per il resto l'interfaccia funziona in modo ottimale e veloce
+Tutto questo avviene attraverso il run di flask dal cmd, cosi da poter avviare in locale il nostro sito. 
+Dall'interfaccia si può quindi andare a cercare un film, cosi da poter leggere la descrizione, e i film correlati, che possono uscire attraverso il linguaggio python e che utilizza un algoritmo di machine learning (nel codice python possiamo farlo con tutti i film possibili, visto la grande quantità di dati presenti all'interno del dataset, mentre all'interno dell'interfaccia possiamo solamente salvare un file txt preso in locale con un film).
+
 
 # MACHINE LEARNING
 
-Vista la richiesta dell'esame abbiamo implementato dunque al nostro codice un algoritmo di machine learning tra quelli studiati. Quello che abbiamo deciso di utilizzare è l'algoritmo K-Nearest Neighbors (KNN) che, oltre alla sua semplicità, produce buoni risultati in un gran numero di domini. L'obbiettivo è quello di andare a calcolare la distanza euclidea tra il titolo inserito in input dall'utente che fa la richiesta di film, e i dati dei film presenti all'interno del dataset. Abbiamo deciso di impostare la nostra variabile k al valore 10, così che a schermo ci esca in come utput atteso i primi 11 valori trovati, che si riferiscono: il primo al titolo stesso cercato dall'utente mentre i successivi 10 alla nostra k di risultati. 
-Quindi in breve quello che fa il nostro algoritmo è quello di analizzare il dato in input e lo ricostruisce andando a cercarlo all'interno del dataset, e mandando in output i correlati, ossia quelli con nome simile. 
+Vista la richiesta dell'esame abbiamo implementato dunque al nostro codice un algoritmo di machine learning tra quelli studiati. Quello che abbiamo deciso di utilizzare è l'algoritmo K-Nearest Neighbors (KNN) che, oltre alla sua semplicità, produce buoni risultati in un gran numero di domini. L'obbiettivo è quello di andare a calcolare la distanza euclidea tra il titolo inserito in input dall'utente che fa la richiesta di film, e i dati dei film presenti all'interno del dataset. Abbiamo deciso di impostare la variabile k al valore 10, così che a schermo esca come output atteso i primi 11 valori trovati (il primo titolo stesso cercato dall'utente mentre i successivi 10 alla nostra k di risultati).
+In output otterremo quindi dei film con caratteristiche simili all'input (esempio: se cerco un film fantasy restituirà il film fantasy con caratteristiche più simili).
 
 # ANALISI DEI RISULTATI
 
-Il programma suggerisce con successo film con caratteristiche simili, infatti dato un titolo restituisce film titoli della stessa serie o dello stesso genere. Nel nostro caso abbiamo anche considerato il regista ed il cast ma volendo possiamo solo basarci sul genere o dare più peso alle parole chiave che meglio descrivono il film. Il programma funziona solo con titoli già presenti nel dataset ma una futura implementazione potrebbe essere di chiedere all’utente le caratteristiche del film cercato e trovare quali film sono più vicini ai gusti dell’utente.
+Il programma suggerisce con successo film con caratteristiche simili, infatti dato un titolo restituisce film titoli della stessa serie o dello stesso genere. 
+Le caratteristice considerate sono regista e cast ma volendo possiamo basarci esclusivamente su genere o dare più peso alle parole chiave che meglio descrivono il film. Il programma funziona solo con titoli già presenti nel dataset ma una futura implementazione potrebbe essere di chiedere all’utente le caratteristiche del film cercato e trovare quali film sono più vicini ai gusti dell’utente.
 
 # CONCLUSIONI
 
 Possiamo notare come il programma funzioni tramite l'algoritmo che abbiamo scelto, la nostra interfaccia grafica inoltre ci permette di caricare noi stessi i film online, in maniera tale da poter averne sempre di nuovi e di ingrandire il nostro dataset.
-Siamo soddisfatti dei risultati che abbiamo ottenuto, visto che nel tempo che abbiamo avuto a disposizione siamo riusciti a sviluppare un programma funzionante e abbastanza ottimizzato, anche se siamo incorsi in diversi errori e problemi nella nostra fase di svolgimento. Nel complesso dunque il programma che abbiamo sviluppato si può adoperare proprio come lo avevamo ideato quindi ci possiamo ritenere soddisfatti.
+Siamo soddisfatti dei risultati che abbiamo ottenuto, visto che nel tempo che abbiamo avuto a disposizione siamo riusciti a sviluppare un programma funzionante e abbastanza ottimizzato, nonostante alcune complicazioni classiche nel lavoro del progrmmatore. 
+Nel complesso dunque il programma che abbiamo sviluppato funziona come avevamo pensato che avrebbe dovuto funzionare e siamo felici del lavoro svolto.
 
 # LINK UTILI
 1. https://flask.palletsprojects.com/en/2.1.x/
