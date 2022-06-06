@@ -41,6 +41,9 @@ Il nostro progetto è strutturato in due parti, la prima parte integra un progra
 Questa sezione sarà divisa in due parti, la prima parte andrà a spiegare come abbiamo lavorato il linguaggio python, mentre la seconda riguarderà l'interfaccia presente nel localhost.
 # 1. Python
 Inizialmente abbiamo trovato online tre dataset per far fronte alla richiesta dell'esame, erano tre dataset separati tra di loro:  “movies_metadata.csv”, ”credits” e ”keyword”, abbiamo iniziato lavorando sull'unione dei dati, e la creazione di un unico dataset su cui poi lavorare. Abbiamo dunque sistemato gli indici, verificato l'integrità del file ed eliminato le righe non idonee, per esempio le vecchie righe 19730,29503,35587, che sono state eliminate in quante erano delle copie di altre righe. Fatto questi passaggi abbiamo ultimato i preparativi e quindi creato un dataset unico con tutti i dati che ci servivano per proseguire all'esame.
-Successivamente abbiamo importato in Python la libreria **ast(Abstract Syntax Tree)** per utilizzare la funzione **literal_eval** all'interno di un ciclo for
+Successivamente abbiamo importato in Python la libreria **ast(Abstract Syntax Tree)** per utilizzare la funzione **literal_eval** all'interno di un ciclo for per convertire i valori di features (cast, crew, keywords e genres) da delle stringhe a delle liste di dizionari. A questo punto da crew abbiamo estratto il direttore, mentre se era assente gli abbiamo attribuito un valore di ritorno Nan. Successivamente abbiamo estratto da cast, crew e genres i valori dai dizionari e abbiamo salvato i primi quattro, visto che questo valore va ad influenzare la prezisione del nostro modello.
+
+
+
 # 2. Interfaccia
 .
