@@ -2,13 +2,11 @@ import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-import json
 
 
 class movies_suggestion:
     global data
     data = pd.read_csv('movies.csv', low_memory=False)
-
     def _generate_matrix(data):
         try:
             count = CountVectorizer(stop_words='english')
@@ -18,9 +16,11 @@ class movies_suggestion:
             return cosine_sim
         except Exception as e:
             return e
-
-    sim = np.load('sim.npy')
-    #sim = _generate_matrix(data)
+    try:
+        sim = np.load('matrix.npy')
+    except:
+        sim = _generate_matrix(data)
+        np.save('matrix.npy',sim, allow_pickle=False, fix_imports=False)
 
     def _get_recommendations(title, cosine_sim):
         try:
