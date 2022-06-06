@@ -61,4 +61,4 @@ Quindi in breve quello che fa il nostro algoritmo è quello di analizzare il dat
 # LINK UTILI
 1. https://flask.palletsprojects.com/en/2.1.x/
 2. https://www.datacamp.com/tutorial/recommender-systems-python
-3. 
+3. https://github.com/EdoAG/Progetto_algoritmi
