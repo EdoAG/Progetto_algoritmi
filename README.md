@@ -25,7 +25,7 @@ a.	Machine Learning
 5.	Conclusione 
 6.	Link utili
 
-#vINTRODUZIONE
+# INTRODUZIONE
 Il lavoro che è stato affidato alla classe del Machine Learning al primo anno del 2021/2022 come esame finale del modulo di Algoritmi è quello di sviluppare 
 mediante le nozioni apprese all’interno del corso un sito che funga da e-commerce, così da poter successivamente implementare quelli che sono gli algoritmi 
 di Machine Learning per poter andare a prevedere i dati. Durante il corso abbiamo avuto la possibilità di poter svolgere questo lavoro in gruppi, 
