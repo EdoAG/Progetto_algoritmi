@@ -16,11 +16,11 @@ In fondo al report saranno anche presenti i link utili e quelli utilizzati per p
 INDICE
 
 1.	Introduzione
-a.	Consegna del lavoro
+  a.	Consegna del lavoro
 2.	Lavoro svolto
-a.	Fase di elaborazione dei dati
+  a.	Fase di elaborazione dei dati
 3.	Funzionamento
-a.	Machine Learning
+  a.	Machine Learning
 4.	Analisi dei Risultati
 5.	Conclusione 
 6.	Link utili
