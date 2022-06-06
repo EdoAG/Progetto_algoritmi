@@ -48,3 +48,5 @@ Quindi abbiamo pulito il dataset, ossia i valori che risultavano vuoti e abbiamo
 Infine attraverso la funzione **get_reccomendation** l'utente da in input il titolo di un film, che attraverso la matrice di similarità va a trovare l'indice rispetto al dato del titolo (nel nostro caso i titoli uguali/simili), va a trovare la distanza tra il film dato in input e tutti gli altri presenti al'interno del dataset utilizzato, vengono ordinati e va a restituire in output i primi 11 titoli correlati (il primo è il nome di se stesso) andando a riassociare l'indice al titolo e vengono stampati in output.
 
 # 2. Interfaccia
+
+# Algoritmo di Machine Learning
