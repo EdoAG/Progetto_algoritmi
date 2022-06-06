@@ -42,5 +42,6 @@ spiegato maggiormente nel capitolo dedicato.
 Il nostro progetto è strutturato in due parti, la prima parte integra un programma scritto in linguaggio Python e l'algoritmo di machine learning, la seconda parte integra un'interfaccia grafica attraverso un codice in HTML e css, e la libreria Flask di Python.
 Questa sezione sarà divisa in due parti, la prima parte andrà a spiegare come abbiamo lavorato il linguaggio python, mentre la seconda riguarderà l'interfaccia presente nel localhost.
 # 1. Python
+Inizialmente abbiamo trovato online tre dataset per far fronte alla richiesta dell'esame, erano tre dataset separati tra di loro:  “movies_metadata.csv”, ”credits” e ”keyword”, abbiamo iniziato lavorando su che sono stati uniti e lavorati cosi da creare un unico dataset completo di tutto, quali sono... 
 # 2. Interfaccia
 .
