@@ -1,5 +1,5 @@
 
-ESAME FINALE UFS04 - Algoritmi di Machine Learning
+# ESAME FINALE UFS04 - Algoritmi di Machine Learning
 
 Il seguente report è stato redatto in quanto è stata richiesto lo sviluppo di un sito di e-commerce con l’implementazione di algoritmi di machine learning, 
 la richiesta fa fronte all’esame finale del modulo UFS04 - Algoritmi di Machine Learning svolto presso l’ITS Angelo Rizzoli. 
@@ -39,3 +39,6 @@ si vanno a selezionare come “preferiti”. Questo tipo di programma utilizza u
 spiegato maggiormente nel capitolo dedicato. 
 
 # LAVORO SVOLTO
+
+Il nostro progetto è stato diviso in due parti, la prima parte integra l'html con un sistema login e registrazione con i dati salvati su un dtabase sqllite, questo serve per registrazione... 
+La seconda parte è un programma in codice python che 
