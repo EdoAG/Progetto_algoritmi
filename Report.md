@@ -48,7 +48,7 @@ Quindi abbiamo pulito il dataset, ossia i valori che risultavano vuoti e abbiamo
 Infine attraverso la funzione **get_reccomendation** l'utente da in input il titolo di un film, che attraverso la matrice di similarità va a trovare l'indice rispetto al dato del titolo (nel nostro caso i titoli uguali/simili), va a trovare la distanza tra il film dato in input e tutti gli altri presenti al'interno del dataset utilizzato, vengono ordinati e va a restituire in output i primi 11 titoli correlati (il primo è il nome di se stesso) andando a riassociare l'indice al titolo e vengono stampati in output.
 
 # 2. Interfaccia
-
+ va sviluppata appena si termina il codice in html!
 # MACHINE LEARNING
 
 Vista la richiesta dell'esame abbiamo implementato dunque al nostro codice un algoritmo di machine learning tra quelli studiati. Quello che abbiamo deciso di utilizzare è l'algoritmo K-Nearest Neighbors (KNN) che, oltre alla sua semplicità, produce buoni risultati in un gran numero di domini. L'obbiettivo è quello di andare a calcolare la distanza euclidea tra il titolo inserito in input dall'utente che fa la richiesta di film, e i dati dei film presenti all'interno del dataset. Abbiamo deciso di impostare la nostra variabile k al valore 10, così che a schermo ci esca in come utput atteso i primi 11 valori trovati, che si riferiscono: il primo al titolo stesso cercato dall'utente mentre i successivi 10 alla nostra k di risultati. 
