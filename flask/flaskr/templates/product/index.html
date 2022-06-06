@@ -6,7 +6,6 @@
 <a class="action" href="{{ url_for('product.create') }}">New</a>
 {% endif %}
 {% endblock %}
-
 {% block content %}
 {% for product in products %}
 <article class="product">
@@ -16,8 +15,10 @@
       <p>{{product['body']}}</p>
       <p>{{product['prezzo']}}</p>
       <p>{{product['tags']}}</p>
-      <h3>
-        <div class="about">by {{ product['username'] }} on {{ product['created'].strftime('%Y-%m-%d') }}</div>
+	  
+      <h3>Film consigliati: </h3>
+	  <pre>{{ text }}</pre> 
+        <div class="about">Da {{ product['username'] }} on {{ product['created'].strftime('%Y-%m-%d') }}</div>
       </h3>
       </td>
       </tr>

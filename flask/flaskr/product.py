@@ -16,7 +16,8 @@ def index():
         ' FROM product p JOIN user u ON p.author_id = u.id'
         ' ORDER BY created DESC'
     ).fetchall()
-    return render_template('product/index.html', products=products)
+    with open(r'C:\Users\EdoardoAndreaGiacomi\OneDrive - ITS Rizzoli\Desktop\Progetto_algoritmi-main\flask\flaskr\film.txt', 'r') as f: 
+        return render_template('product/index.html', products=products, text=f.read())
 
 
 @bp.route('/create', methods=('GET', 'POST'))
