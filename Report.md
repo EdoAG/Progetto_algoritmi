@@ -53,3 +53,12 @@ Infine attraverso la funzione **get_reccomendation** l'utente da in input il tit
 
 Vista la richiesta dell'esame abbiamo implementato dunque al nostro codice un algoritmo di machine learning tra quelli studiati. Quello che abbiamo deciso di utilizzare è l'algoritmo K-Nearest Neighbors (KNN) che, oltre alla sua semplicità, produce buoni risultati in un gran numero di domini. L'obbiettivo è quello di andare a calcolare la distanza euclidea tra il titolo inserito in input dall'utente che fa la richiesta di film, e i dati dei film presenti all'interno del dataset. Abbiamo deciso di impostare la nostra variabile k al valore 10, così che a schermo ci esca in come utput atteso i primi 11 valori trovati, che si riferiscono: il primo al titolo stesso cercato dall'utente mentre i successivi 10 alla nostra k di risultati. 
 Quindi in breve quello che fa il nostro algoritmo è quello di analizzare il dato in input e lo ricostruisce andando a cercarlo all'interno del dataset, e mandando in output i correlati, ossia quelli con nome simile. 
+
+# ANALISI DEI RISULTATI
+
+# CONCLUSIONI
+
+# LINK UTILI
+1. https://flask.palletsprojects.com/en/2.1.x/
+2. https://www.datacamp.com/tutorial/recommender-systems-python
+3. 
